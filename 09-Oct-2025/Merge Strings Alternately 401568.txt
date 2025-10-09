@@ -1,0 +1,19 @@
+# Problem: Merge Strings Alternately - https://leetcode.com/problems/merge-strings-alternately/
+
+/**
+ * @param {string} word1
+ * @param {string} word2
+ * @return {string}
+ */
+var mergeAlternately = function(word1, word2) {
+    let w3="";
+    for(let i=0; i<Math.max(word2.length,word1.length); i++){
+        if(i<word1.length){
+            w3+=word1.charAt(i);
+        }
+        if(i<word2.length){
+            w3+=word2.charAt(i);
+        }
+    }
+    return w3;
+};
